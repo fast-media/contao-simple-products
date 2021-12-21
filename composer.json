@@ -19,7 +19,7 @@
     },
     "extra":{
         "branch-alias": {
-            "dev-master": "4.4.0"
+            "dev-master": "4.4.0-dev"
         }
     },
     "prefer-stable": true,
