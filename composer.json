@@ -1,0 +1,31 @@
+{
+    "name":"fast-media/contao-simple-products",
+    "description":"product catalog for Contao Open Source CMS",
+    "keywords":["contao", "products", "catalog", "category"],
+    "type":"contao-bundle",
+    "license":"LGPL-3.0-or-later",
+    "homepage" : "https://www.fast-media.net",
+    "authors":[
+        {
+            "name": "Christian Schmidt",
+            "homepage": "https://www.fast-media.net",
+            "email": "dev@fast-media.net",
+            "role": "Developer"
+        }
+    ],
+    "require":{
+        "php": ">=7.1",
+        "contao/core-bundle":"~4.9"
+    },
+    "replace": {
+        "contao-legacy/calendarfield": "self.version",
+        "terminal42/contao-calendarfield": "self.version"
+    },
+    "extra":{
+        "branch-alias": {
+            "dev-master": "4.4.0"
+        }
+    },
+    "prefer-stable": true,
+    "minimum-stability": "dev"
+}
