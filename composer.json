@@ -28,11 +28,11 @@
     "psr-4": {
     }
   },
-    "extra":{
-        "branch-alias": {
-            "dev-master": "4.4.0-dev"
-        }
-    },
-    "prefer-stable": true,
-    "minimum-stability": "dev"
+  "extra":{
+      "contao":{
+          "sources":{
+              "system/modules/simple_products":"system/modules/simple_products"
+          }
+      }
+  }
 }
