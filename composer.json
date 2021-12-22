@@ -1,29 +1,29 @@
 {
-    "name":"fast-media/contao-simple-products",
-    "description":"product catalog for Contao Open Source CMS",
-    "keywords":["contao", "products", "catalog", "category"],
-    "type":"contao-module",
-    "license":"LGPL-3.0-or-later",
-    "homepage" : "https://www.fast-media.net/de/produkte/contao-erweiterung/contao-produktkatalog/",
-    "authors":[
-        {
-            "name": "Christian Schmidt",
-            "homepage": "https://www.fast-media.net",
-            "email": "dev@fast-media.net",
-            "role": "Developer"
-        }
-    ],
-    "support":{
-      "issues":"https://www.fast-media.net/de/produkte/support/contao-produktkatalog/",
-      "forum":"https://www.fast-media.net/de/produkte/support/contao-produktkatalog/",
-      "wiki":"https://www.fast-media.net/de/produkte/handbuch/produktkatalog/",
-      "source":"https://www.fast-media.net/de/produkte/contao-erweiterung/contao-produktkatalog/",
-      "github":"https://github.com/fast-media/contao-simple-products"
-    },
-    "require":{
-        "php": ">=7.1",
-        "contao/core-bundle":"~4.9"
-    },
+  "name":"fast-media/contao-simple-products",
+  "description":"product catalog for Contao Open Source CMS",
+  "keywords":["contao", "products", "catalog", "category"],
+  "type":"contao-bundle",
+  "license":"LGPL-3.0-or-later",
+  "homepage" : "https://www.fast-media.net/de/produkte/contao-erweiterung/contao-produktkatalog/",
+  "authors":[
+      {
+          "name": "Christian Schmidt",
+          "homepage": "https://www.fast-media.net",
+          "email": "dev@fast-media.net",
+          "role": "Developer"
+      }
+  ],
+  "support":{
+    "issues":"https://www.fast-media.net/de/produkte/support/contao-produktkatalog/",
+    "forum":"https://www.fast-media.net/de/produkte/support/contao-produktkatalog/",
+    "wiki":"https://www.fast-media.net/de/produkte/handbuch/produktkatalog/",
+    "source":"https://www.fast-media.net/de/produkte/contao-erweiterung/contao-produktkatalog/",
+    "github":"https://github.com/fast-media/contao-simple-products"
+  },
+  "require":{
+      "php": ">=7.1",
+      "contao/core-bundle":"~4.9"
+  },
   "autoload": {
     "psr-4": {
     }
