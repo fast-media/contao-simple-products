@@ -29,6 +29,7 @@
     }
   },
   "extra":{
+    "contao-manager-plugin": "FastMedia\\SimpleProducts\\ContaoManager\\Plugin",
       "contao":{
           "sources":{
               "system/modules/simple_products":"system/modules/simple_products"
