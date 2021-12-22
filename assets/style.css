@@ -1,0 +1,4 @@
+/* Contao simple_products style sheet */
+table.tl_event_cart td,table.tl_event_cart th { border:1px solid #bbb;padding:4px 9px;}
+div.td { float:left; width:30%;}
+div.inactive { opacity:0.5;}
