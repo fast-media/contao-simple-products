@@ -1,0 +1,19 @@
+<div class="product_item product_features <?php echo $this->class; ?> block"<?php echo $this->cssID; ?><?php if ($this->style): ?> style="<?php echo $this->style; ?>"<?php endif; ?>>
+
+	<?php if($this->features): ?>
+    <ul class="ce_list feature_list">
+      <?php foreach ($this->features as $item): ?>
+        <li<?php if ($item['class']): ?> class="<?= $item['class'] ?>"<?php endif; ?>><?= $item['content'] ?></li>
+      <?php endforeach; ?>
+    </ul>
+	<?php endif; ?>
+
+	<?php
+
+	if($this->demo): ?>
+	<div class="product_demo submit_button">
+	<a href="<?php echo $this->demo_url; ?>" target="_blank" class="submit">Zur Produktpräsentation</a>
+	</div>
+	<?php endif; ?>
+
+</div>

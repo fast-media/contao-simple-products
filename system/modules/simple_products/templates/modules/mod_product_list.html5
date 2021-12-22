@@ -1,0 +1,100 @@
+<!-- indexer::stop -->
+<div class="<?php echo $this->class; ?><?php echo $this->classes; ?> block"<?php echo $this->cssID; ?><?php if ($this->style): ?> style="<?php echo $this->style; ?>"<?php endif; ?>>
+
+  <?php if ($this->headline || $this->search_for || $this->category): ?>
+    <<?php echo $this->hl; ?>><?php if($this->search_for) { echo 'Suche nach <span class="active">'.$this->search_for.'</span>'; } elseif($this->category) { echo $this->category; } else { echo $this->headline; } ?></<?php echo $this->hl; ?>>
+  <?php endif; ?>
+
+	<?php if ($this->addImage): ?>
+		<?php if ($this->floating == 'below') { echo $this->teaser; } ?>
+		<figure class="image_container<?php echo $this->floatClass; ?>"<?php if ($this->margin || $this->float): ?> style="<?php echo trim($this->margin . $this->float); ?>"<?php endif; ?>>
+			<?php if ($this->text) { $this->href = $this->link; } ?>
+			<?php if ($this->href): ?>
+				<a href="<?php echo $this->href; ?>"<?php echo $this->attributes; ?> title="<?php echo $this->alt; ?>">
+			<?php endif; ?>
+
+			<img src="<?php echo $this->src; ?>"<?php echo $this->imgSize; ?> alt="<?php echo $this->alt; ?>">
+
+			<?php if ($this->href): ?>
+				</a>
+			<?php endif; ?>
+
+			<?php if ($this->caption): ?>
+				<figcaption class="caption" style="width:<?php echo $this->arrSize[0]; ?>px"><?php echo $this->caption; ?></figcaption>
+			<?php endif; ?>
+		</figure>
+	<?php endif; ?>
+
+	<?php if($this->teaser): ?><div class="category_teaser"><?php echo $this->teaser; ?></div><?php endif; ?>
+
+  <?php if ($this->empty): ?>
+		<p class="empty"><?php echo $this->empty; ?></p>
+  <?php else: ?>
+
+		<?php if ($this->show_sort || $this->show_limit || $this->list_view): ?>
+		<div class="list_options block">
+		  <?php if ($this->show_sort): ?>
+		    <div class="list_sort">
+		      <form<?php if ($this->action): ?> action="<?php echo $this->action; ?>"<?php endif; ?> method="get">
+		        <div class="formbody">
+		          <input type="hidden" name="order_by" value="<?php echo $this->order_by; ?>">
+		          <input type="hidden" name="search" value="<?php echo $this->search; ?>">
+		          <input type="hidden" name="for" value="<?php echo $this->for; ?>">
+		          <input type="hidden" name="per_page" value="<?php echo $this->per_page; ?>">
+		          <input type="hidden" name="view" value="<?php echo $this->view; ?>">
+		          <label for="ctrl_sort"><?php echo $this->sort_label; ?></label>
+		          <select name="sort" id="ctrl_sort" class="<?php echo $this->sort_class; ?>" onchange="window.location=this.options[this.selectedIndex].value">
+		            <?php echo $this->show_sort; ?>
+		          </select>
+		        </div>
+		      </form>
+		    </div>
+		  <?php endif; ?>
+
+	    <?php if($this->list_view): ?>
+		    <div class="list_view">
+	        <span class="label"><?php echo $this->view_label; ?></span>
+					<span class="select">
+			      <?php echo $this->list_view; ?>
+					</span>
+		    </div>
+	    <?php endif; ?>
+
+		  <?php if ($this->show_limit): ?>
+		    <div class="list_per_page">
+		      <form<?php if ($this->action): ?> action="<?php echo $this->action; ?>"<?php endif; ?> method="get">
+		        <div class="formbody">
+		          <input type="hidden" name="order_by" value="<?php echo $this->order_by; ?>">
+		          <input type="hidden" name="sort" value="<?php echo $this->sort; ?>">
+		          <input type="hidden" name="search" value="<?php echo $this->search; ?>">
+		          <input type="hidden" name="for" value="<?php echo $this->for; ?>">
+							<input type="hidden" name="view" value="<?php echo $this->view; ?>">
+		          <label for="ctrl_per_page" class="invisible"><?php echo $this->per_page_label; ?></label>
+		          <select name="per_page" id="ctrl_per_page" class="<?php echo $this->per_page_class; ?>">
+		            <?php echo $this->show_limit; ?>
+		          </select>
+		          <input type="submit" class="submit" value="<?php echo $this->per_page_label; ?>">
+		        </div>
+		      </form>
+		    </div>
+		  <?php endif; ?>
+		</div>
+	  <?php endif; ?>
+
+		<?php if($this->show_count && $this->count): ?>
+			<div class="count">
+				<?php echo $this->count; ?> Produkte
+			</div>
+		<?php endif; ?>
+
+		<div class="products">
+	  	<?php foreach ($this->articles as $article) echo $article; ?>
+		</div>
+
+	  <?php echo $this->pagination; ?>
+
+		<?php if($this->priceInfo): ?><div class="price_info">* <?php echo $this->priceInfo; ?></div><?php endif; ?>
+
+  <?php endif; ?>
+</div>
+<!-- indexer::continue -->

@@ -1,0 +1,7 @@
+<script src="system/modules/simple_products/assets/jquery.tabs.min.js"></script>
+
+  <script>
+  $(function() {
+    $( "#tabs" ).tabs();
+  });
+  </script>

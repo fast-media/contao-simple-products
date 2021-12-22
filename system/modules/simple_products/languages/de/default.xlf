@@ -1,0 +1,21 @@
+<?xml version="1.0" ?><xliff version="1.1">
+  <file datatype="php" original="src/Resources/contao/languages/en/default.php" source-language="en" target-language="de">
+    <body>
+       <trans-unit id="MSC.male">
+        <target>Herr</target>
+      </trans-unit>
+      <trans-unit id="MSC.female">
+        <target>Frau</target>
+      </trans-unit>
+            <trans-unit id="MSC.other">
+        <target>Divers</target>
+      </trans-unit>
+      <trans-unit id="ERR.gender.0">
+        <target>Anrede</target>
+      </trans-unit>
+      <trans-unit id="ERR.gender.1">
+        <target>Bitte wählen Sie die Anrede.</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

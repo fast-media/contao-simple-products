@@ -1,0 +1,17 @@
+
+<ul class="<?php echo $this->level; ?>">
+  <?php foreach ($this->items as $item): ?>
+      <li<?php if ($item['class']): ?> class="<?php echo $item['class']; ?>"<?php endif; ?>>
+	      <?php if($item['image']): ?>
+					<figure class="image_container image_link">
+						<a href="<?php if($item['imageUrl']) { echo $item['imageUrl']; } else { echo $item['href']; } ?>" title="<?php echo $item['alt']; ?>">
+          		<?php echo $item['image']; ?>
+						</a>
+					</figure>
+				<?php endif; ?>
+	      <div class="text_link">
+					<a href="<?php echo $item['href']; ?>" title="<?php echo $item['pageTitle'] ? $item['pageTitle'] : $item['title']; ?>" class="text_link"<?php if ($item['accesskey'] != ''): ?> accesskey="<?php echo $item['accesskey']; ?>"<?php endif; ?><?php if ($item['tabindex']): ?> tabindex="<?php echo $item['tabindex']; ?>"<?php endif; ?><?php if ($item['nofollow']): ?> rel="nofollow"<?php endif; ?><?php echo $item['target']; ?>><?php echo $item['link']; ?></a><?php echo $item['subitems']; ?>
+				</div>
+			</li>
+  <?php endforeach; ?>
+</ul>
