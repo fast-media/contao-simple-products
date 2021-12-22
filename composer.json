@@ -16,10 +16,9 @@
     "support":{
       "issues":"https://www.fast-media.net/de/produkte/support/contao-produktkatalog/",
       "forum":"https://www.fast-media.net/de/produkte/support/contao-produktkatalog/",
-      "wiki":"https://www.fast-media.net/de/produkte/contao-erweiterung/contao-produktkatalog/",
-      "docs":"https://www.fast-media.net/de/produkte/contao-erweiterung/contao-produktkatalog/",
-      "manual":"https://www.fast-media.net/de/produkte/handbuch/produktkatalog/",
-      "source":"https://github.com/fast-media/contao-simple-products"
+      "wiki":"https://www.fast-media.net/de/produkte/handbuch/produktkatalog/",
+      "source":"https://www.fast-media.net/de/produkte/contao-erweiterung/contao-produktkatalog/",
+      "github":"https://github.com/fast-media/contao-simple-products"
     },
     "require":{
         "php": ">=7.1",
