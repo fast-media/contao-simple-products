@@ -17,6 +17,14 @@
         "php": ">=7.1",
         "contao/core-bundle":"~4.9"
     },
+  "autoload": {
+    "psr-4": {
+    },
+    "classmap": [
+    ],
+    "exclude-from-classmap": [
+    ]
+  },
     "extra":{
         "branch-alias": {
             "dev-master": "4.4.0-dev"
