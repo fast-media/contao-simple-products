@@ -2,7 +2,7 @@
     "name":"fast-media/contao-simple-products",
     "description":"product catalog for Contao Open Source CMS",
     "keywords":["contao", "products", "catalog", "category"],
-    "type":"contao-bundle",
+    "type":"contao-module",
     "license":"LGPL-3.0-or-later",
     "homepage" : "https://www.fast-media.net",
     "authors":[
@@ -13,17 +13,19 @@
             "role": "Developer"
         }
     ],
+    "support":{
+      "issues":"https://www.fast-media.net/de/produkte/support/contao-produktkatalog/",
+      "wiki":"https://www.fast-media.net/de/produkte/handbuch/produktkatalog/",
+      "manual":"https://www.fast-media.net/de/produkte/handbuch/produktkatalog/",
+      "source":"https://github.com/fast-media/contao-simple-products"
+    },
     "require":{
         "php": ">=7.1",
         "contao/core-bundle":"~4.9"
     },
   "autoload": {
     "psr-4": {
-    },
-    "classmap": [
-    ],
-    "exclude-from-classmap": [
-    ]
+    }
   },
     "extra":{
         "branch-alias": {
