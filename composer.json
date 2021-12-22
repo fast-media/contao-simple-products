@@ -4,7 +4,7 @@
     "keywords":["contao", "products", "catalog", "category"],
     "type":"contao-module",
     "license":"LGPL-3.0-or-later",
-    "homepage" : "https://www.fast-media.net",
+    "homepage" : "https://www.fast-media.net/de/produkte/contao-erweiterung/contao-produktkatalog/",
     "authors":[
         {
             "name": "Christian Schmidt",
@@ -15,7 +15,9 @@
     ],
     "support":{
       "issues":"https://www.fast-media.net/de/produkte/support/contao-produktkatalog/",
-      "wiki":"https://www.fast-media.net/de/produkte/handbuch/produktkatalog/",
+      "forum":"https://www.fast-media.net/de/produkte/support/contao-produktkatalog/",
+      "wiki":"https://www.fast-media.net/de/produkte/contao-erweiterung/contao-produktkatalog/",
+      "docs":"https://www.fast-media.net/de/produkte/contao-erweiterung/contao-produktkatalog/",
       "manual":"https://www.fast-media.net/de/produkte/handbuch/produktkatalog/",
       "source":"https://github.com/fast-media/contao-simple-products"
     },
