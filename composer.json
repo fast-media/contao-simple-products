@@ -1,6 +1,6 @@
 {
   "name":"fast-media/contao-simple-products",
-  "description":"product catalog for Contao Open Source CMS",
+  "description":"product catalog for Contao Open Source CMS - bundle is coming soon",
   "keywords":["contao", "products", "catalog", "category"],
   "type":"contao-module",
   "license":"LGPL-3.0-or-later",
